@@ -14,6 +14,7 @@ const CPL_NAV = [
   ['news.html', 'News'],
   ['gallery.html', 'Gallery'],
   ['equipment.html', 'Equipment'],
+  ['register.html', 'Register'],
   ['enquiries.html', 'Enquiries'],
   ['about.html', 'About'],
   ['login.html', 'Login']
