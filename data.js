@@ -6,7 +6,7 @@
 const CPL_CONFIG = {
   // Replace with your Google Sheet's ID — the long string in its URL
   // between /d/ and /edit, e.g. https://docs.google.com/spreadsheets/d/THIS_PART/edit
-  SHEET_ID: 'YOUR_SHEET_ID_HERE',
+  SHEET_ID: '1rLuEFCH1pXp5r0PQkVwLbfrurG8kLVUrUm0QwaVC9E8',
 
   // Apps Script web app /exec URL (from Deploy > New deployment > Web app)
   APPS_SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbypseVgcnpySR3UgqeCMqCXk_HylsVrCuGdlAw7a90txlVOw5jNB5qmL0ZuY6QI9OMYVg/exec',
