@@ -8,7 +8,10 @@ async function initRefereesPage() {
   const root = document.getElementById('referees-table');
   root.innerHTML = '<p class="loading">Loading referees…</p>';
   try {
-    CPL_ALL_REFEREES = await CPL.get('Referees');
+    const rows = await CPL.get('Referees');
+    // Hide anyone still awaiting admin activation. Rows with no Status at
+    // all (older entries, added before this column existed) stay visible.
+    CPL_ALL_REFEREES = rows.filter(r => (r.Status || '').trim().toLowerCase() !== 'pending');
     renderRefereesTable(CPL_ALL_REFEREES);
     document.getElementById('referees-search').addEventListener('input', (e) => {
       const term = e.target.value.trim().toLowerCase();
